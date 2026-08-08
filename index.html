@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LucFaneva — Photographe | Madagascar</title>
+<meta name="description" content="Photographe professionnel à Madagascar. Mariages, portraits, paysages, corporate. Chaque image raconte une histoire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__mark">luc Faneva</a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#accueil">Accueil</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#services">Services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact" class="nav__cta">Contact</a>
+  </nav>
+  <button class="nav__burger" id="burger" aria-label="Ouvrir le menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="accueil">
+  <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1800&auto=format&fit=crop')"></div>
+  <div class="hero__grain"></div>
+  <div class="hero__content">
+    <p class="eyebrow">Tongasoa — Bienvenue</p>
+    <h1 class="hero__title">Lu<span>c</span><br>Faneva</h1>
+    <p class="hero__role">Photographe — Madagascar</p>
+    <p class="hero__lede">Mariages, portraits, paysages &amp; corporate. Depuis 2011, je capture la lumière de l'île pour en faire des souvenirs qui traversent le temps.</p>
+    <a href="#galerie" class="btn btn--ghost">Voir le travail ↓</a>
+  </div>
+  <div class="hero__reel">
+    <span>MARIAGE</span><span>•</span><span>PORTRAIT</span><span>•</span>
+    <span>PAYSAGE</span><span>•</span><span>CORPORATE</span><span>•</span>
+    <span>ÉVÉNEMENTIEL</span><span>•</span>
+  </div>
+</section>
+
+<!-- ===== POURQUOI ME CHOISIR ===== -->
+<section class="why" id="pourquoi">
+  <div class="why__num">01</div>
+  <div class="why__body">
+    <p class="eyebrow">Pourquoi me choisir</p>
+    <h2>Un regard, une sensibilité,<br>une approche&nbsp;unique.</h2>
+    <p class="why__intro">Choisir un photographe, c'est choisir une façon de voir. Depuis 2011, ma passion pour l'image s'est affinée en une signature qui allie émotion, précision et authenticité.</p>
+    <div class="why__grid">
+      <div class="why__item">
+        <span class="why__mark">✓</span>
+        <h3>Approche humaine</h3>
+        <p>Chaque projet est une histoire à raconter. Je prends le temps de comprendre vos attentes avant de déclencher.</p>
+      </div>
+      <div class="why__item">
+        <span class="why__mark">✓</span>
+        <h3>Expertise reconnue</h3>
+        <p>Plus d'une décennie en photographie événementielle, immobilière et artistique, pour particuliers et entreprises.</p>
+      </div>
+      <div class="why__item">
+        <span class="why__mark">✓</span>
+        <h3>Exigence du détail</h3>
+        <p>Chaque cliché est travaillé avec soin, de la prise de vue à la post-production.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIE — FILM STRIP ===== -->
+<section class="gallery" id="galerie">
+  <p class="eyebrow eyebrow--center">Mon Portfolio</p>
+  <h2 class="section-title">Projets en vedette</h2>
+
+  <div class="filters" id="filters">
+    <button class="filter active" data-filter="all">Tout</button>
+    <button class="filter" data-filter="mariage">Mariage</button>
+    <button class="filter" data-filter="portrait">Portrait</button>
+    <button class="filter" data-filter="paysage">Paysage</button>
+    <button class="filter" data-filter="corporate">Corporate</button>
+  </div>
+
+  <div class="filmstrip">
+    <div class="filmstrip__perf"></div>
+    <div class="filmstrip__track" id="track">
+
+      <figure class="frame" data-cat="portrait">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop" alt="Portrait professionnel">
+        <figcaption><span>01</span> Portrait Professionnel</figcaption>
+      </figure>
+
+      <figure class="frame" data-cat="corporate">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop" alt="Photo corporate">
+        <figcaption><span>02</span> Corporate &amp; E-commerce</figcaption>
+      </figure>
+
+      <figure class="frame" data-cat="mariage">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop" alt="Mariage">
+        <figcaption><span>03</span> Votre plus beau jour</figcaption>
+      </figure>
+
+      <figure class="frame" data-cat="paysage">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1000&auto=format&fit=crop" alt="Paysage de Madagascar">
+        <figcaption><span>04</span> Paysage — Île au trésor</figcaption>
+      </figure>
+
+      <figure class="frame" data-cat="portrait">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop" alt="Portrait artistique">
+        <figcaption><span>05</span> Portraits sur mesure</figcaption>
+      </figure>
+
+      <figure class="frame" data-cat="mariage">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1000&auto=format&fit=crop" alt="Cérémonie de mariage">
+        <figcaption><span>06</span> Cérémonie &amp; émotions</figcaption>
+      </figure>
+
+      <figure class="frame" data-cat="paysage">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=1000&auto=format&fit=crop" alt="Nature de Madagascar">
+        <figcaption><span>07</span> Nos fiertés naturelles</figcaption>
+      </figure>
+
+      <figure class="frame" data-cat="corporate">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop" alt="Événement live">
+        <figcaption><span>08</span> Live — nos artistes</figcaption>
+      </figure>
+
+    </div>
+    <div class="filmstrip__perf"></div>
+  </div>
+  <p class="filmstrip__hint">← glissez pour explorer →</p>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="services__head">
+    <p class="eyebrow">Notre spécialité</p>
+    <h2>Qualité &amp; professionnalisme</h2>
+  </div>
+  <div class="services__grid">
+    <div class="service">
+      <span class="service__idx">Événementiel</span>
+      <p>Capturez l'essence de vos événements avec des photos dynamiques et authentiques, immortalisant chaque moment clé.</p>
+    </div>
+    <div class="service">
+      <span class="service__idx">Mariages</span>
+      <p>Immortalisez le plus beau jour de votre vie avec des photos romantiques, capturant chaque détail et chaque sourire.</p>
+    </div>
+    <div class="service">
+      <span class="service__idx">Commerciale</span>
+      <p>Mettez en valeur vos produits et services avec des images professionnelles qui incitent à l'achat.</p>
+    </div>
+    <div class="service">
+      <span class="service__idx">Mode</span>
+      <p>Sublimez vos créations avec des clichés qui vont impacter votre communauté.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== A PROPOS ===== -->
+<section class="about" id="apropos">
+  <div class="about__img">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=1200&auto=format&fit=crop" alt="Francky Rakoto, photographe">
+  </div>
+  <div class="about__body">
+    <p class="eyebrow">luc Faneva — Photographer</p>
+    <h2>Une passion au cœur du métier</h2>
+    <p>Depuis 2020, la photographie est bien plus qu'un métier pour moi : c'est une passion qui me pousse à capturer l'instant, à raconter des histoires et à sublimer chaque sujet à travers mon objectif.</p>
+    <p>Ce site est une fenêtre ouverte sur mon travail, un espace où chaque image traduit une émotion, une lumière, une perspective unique. Découvrez mes réalisations et n'hésitez pas à me contacter pour échanger sur votre projet.</p>
+    <div class="about__stats">
+      <div><strong>13+</strong><span>ans d'expérience</span></div>
+      <div><strong>250+</strong><span>projets réalisés</span></div>
+      <div><strong>3</strong><span>spécialités clés</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <p class="eyebrow eyebrow--center">Avez-vous un projet en tête ?</p>
+  <h2 class="section-title">Mettons-nous au travail</h2>
+
+  <form class="contact__form" id="contactForm">
+    <div class="field">
+      <input type="text" id="name" name="name" required placeholder=" ">
+      <label for="name">Votre nom</label>
+    </div>
+    <div class="field">
+      <input type="email" id="email" name="email" required placeholder=" ">
+      <label for="email">Votre email</label>
+    </div>
+    <div class="field">
+      <select id="subject" name="subject">
+        <option value="mariage">Mariage</option>
+        <option value="portrait">Portrait</option>
+        <option value="corporate">Corporate</option>
+        <option value="paysage">Paysage / Autre</option>
+      </select>
+      <label for="subject">Type de projet</label>
+    </div>
+    <div class="field field--full">
+      <textarea id="message" name="message" required placeholder=" " rows="4"></textarea>
+      <label for="message">Parlez-moi de votre projet</label>
+    </div>
+    <button type="submit" class="btn btn--solid">Envoyer le message</button>
+    <p class="form__note" id="formNote"></p>
+  </form>
+
+  <div class="contact__direct">
+    <a href="mailtof:contact@lucFA.com">contact@lucFA.com</a>
+    <a href="https://wa.me/261341232545">+261 34 00 000 00</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__top">
+    <span class="nav__mark">LUC. FANeva</span>
+    <div class="footer__socials">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© <span id="year"></span> luc Faneva — Photographe. Tous droits réservés.</p>
+    <p>Conçu &amp; développé avec soin.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Retour en haut">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
