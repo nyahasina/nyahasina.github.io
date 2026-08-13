@@ -478,9 +478,11 @@ h1,h2,h3{ font-family:var(--display); font-weight:450; line-height:1.05; letter-
 }
 @media (max-width:720px){
   .nav__links{
-    position:fixed; inset:0 0 0 30%;
-    z-index: 99;
+    position:fixed;
+    top:0; right:0; bottom:0; left:30%;
+    z-index:99;
     background:var(--bg);
+    display:flex;
     flex-direction:column; justify-content:center; align-items:flex-start;
     gap:28px; padding:0 var(--pad);
     transform:translateX(100%);
@@ -490,5 +492,4 @@ h1,h2,h3{ font-family:var(--display); font-weight:450; line-height:1.05; letter-
   .nav__links.open{ transform:translateX(0); }
   .nav__links a{ font-size:16px; }
   .nav__burger{ display:flex; }
-  .services__grid{ grid-template-columns:1fr; }
 }
