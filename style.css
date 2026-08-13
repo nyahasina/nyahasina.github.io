@@ -1,6 +1,5 @@
-/* ===================================================
-   TOKENS
-=================================================== */
+/* 
+   TOKENS */
 :root{
   --bg:        #14120F;
   --bg-alt:    #1B1814;
@@ -82,9 +81,8 @@ h1,h2,h3{ font-family:var(--display); font-weight:450; line-height:1.05; letter-
 }
 .btn--solid:hover{ background:#e0b52d; }
 
-/* ===================================================
-   NAV
-=================================================== */
+/*
+   NAV */
 .nav{
   position:fixed; top:0; left:0; right:0; z-index:100;
   display:flex; align-items:center; justify-content:space-between;
@@ -123,8 +121,15 @@ h1,h2,h3{ font-family:var(--display); font-weight:450; line-height:1.05; letter-
   flex-direction:column;
   gap:5px;
   z-index:101;
+  width: 44px;
+  height: 44px;
+  padding: 11px;
+  margin: 10px;
 }
 .nav__burger span{ width:24px; height:1.5px; background:var(--ink); transition:.3s; }
+.nav__burger.open span:nth-child(1){ transform: translate(6.5px) rotate(45deg);}
+.nav__burger.open span:nth-child(2){opacity: 0;}
+.nav__burger.open span:nth-child(3){ transform: translate(-6.5px) rotate(-45deg);}
 
 /* ===================================================
    HERO
@@ -401,7 +406,14 @@ h1,h2,h3{ font-family:var(--display); font-weight:450; line-height:1.05; letter-
 .field textarea:not(:placeholder-shown) + label{
   top:-14px; font-size:11px; font-family:var(--mono); letter-spacing:0.06em; color:var(--gold);
 }
-.field select{ color:var(--ink); }
+.field select{ color:var(--ink); padding-top: 22px; }
+.field--select label{
+  top: -14px !important;
+  font-size: 11px !important;
+  font-family: var(--mono) !important;
+  letter-spacing: 0.O6em;
+  color: var(--gold) !important;
+}
 .contact .btn--solid{ grid-column:1 / -1; justify-self:start; margin-top:10px; }
 .form__note{ grid-column:1/-1; font-family:var(--mono); font-size:13px; color:#E9D98B; }
 .contact__direct{
@@ -467,6 +479,7 @@ h1,h2,h3{ font-family:var(--display); font-weight:450; line-height:1.05; letter-
 @media (max-width:720px){
   .nav__links{
     position:fixed; inset:0 0 0 30%;
+    z-index: 99;
     background:var(--bg);
     flex-direction:column; justify-content:center; align-items:flex-start;
     gap:28px; padding:0 var(--pad);

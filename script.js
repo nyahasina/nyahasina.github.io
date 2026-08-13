@@ -15,10 +15,19 @@ const burger = document.getElementById('burger');
 const navLinks = document.getElementById('navLinks');
 
 burger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
+  burger.classList.toggle('open', isOpen);
+  burger.setAttribute('aria-expanded', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  };)
+  
 });
 
 // ===== FILTRE GALERIE =====
