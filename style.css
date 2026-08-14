@@ -493,3 +493,60 @@ h1,h2,h3{ font-family:var(--display); font-weight:450; line-height:1.05; letter-
   .nav__links a{ font-size:16px; }
   .nav__burger{ display:flex; }
 }
+
+/* ===================================================
+   PRELOADER — rideau qui glisse
+=================================================== */
+.preloader{
+  position:fixed; inset:0; z-index:999;
+  background:var(--bg);
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  gap:20px;
+  animation: curtainUp 0.9s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 2.2s;
+}
+@keyframes curtainUp{
+  to{
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+}
+.preloader__logo{
+  font-family:var(--display);
+  font-size:clamp(28px, 5vw, 44px);
+  color:var(--ink);
+  letter-spacing:0.02em;
+  opacity:0;
+  animation: fadeInText 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+@keyframes fadeInText{
+  to{ opacity:1; }
+}
+.preloader__line{
+  width:0;
+  height:1px;
+  background:var(--gold);
+  animation: lineGrow 0.8s ease forwards;
+  animation-delay: 0.8s;
+}
+@keyframes lineGrow{
+  to{ width:100px; }
+}
+
+/* ===================================================
+   APPARITION DU CONTENU — synchronisée avec le rideau
+=================================================== */
+.page{
+  opacity:0;
+  transform: translateY(30px) scale(0.98);
+  animation: revealPage 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 2.4s;
+}
+@keyframes revealPage{
+  to{
+    opacity:1;
+    transform: translateY(0) scale(1);
+  }
+}

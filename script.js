@@ -1,3 +1,13 @@
+// ===== PRELOADER (avec sécurité anti-blocage) =====
+document.body.classList.add('loading');
+const preloader = document.getElementById('preloader');
+
+function hidePreloader(){
+  if (!preloader || preloader.classList.contains('hide')) return; // évite de le faire 2 fois
+  preloader.classList.add('hide');
+  document.body.classList.remove('loading');
+}
+
 // ===== NAV: état au scroll =====
 const nav = document.getElementById('nav');
 const toTop = document.getElementById('toTop');
