@@ -519,10 +519,8 @@ h1,h2,h3{ font-family:var(--display); font-weight:450; line-height:1.05; letter-
   font-size:clamp(20px, 8vw, 44px);
   color:var(--ink);
   letter-spacing:0.02em;
-  width: 100%;
-  max-width: 90vw;
+  max-width: 90%;
   text-align: center;
-  margin: 0 auto;
   opacity:0;
   animation: fadeInText 0.8s ease forwards;
   animation-delay: 0.2s;
